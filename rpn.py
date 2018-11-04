@@ -28,5 +28,5 @@ def main():
         # # except ValueError:
             pass
 
-    if __name__ == '__main__':
-        main()
+if __name__ == '__main__':
+     main()
