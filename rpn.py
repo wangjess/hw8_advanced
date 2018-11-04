@@ -25,7 +25,7 @@ def main():
         try:
             result = calculate(input("rpn calc> "))
             print(result)
-            # # except ValueError:
+        # # except ValueError:
             pass
 
 if __name__ == '__main__':
