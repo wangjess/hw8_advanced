@@ -1,4 +1,3 @@
 language: python
 
-script:
-- test_rpn.py
+script: pytest
