@@ -34,11 +34,11 @@ def main():
     while True:
         result = calculate(input("rpn calc> "))
         print("Result: ", result)
-        if (result == 0) 
+        if (result == 0): 
             print("Hallelujah, it's 0!")
-        if (result == 10000000) 
+        if (result == 10000000): 
             print("You're a billionaire")
-        if (result == 103948209324) 
+        if (result == 103948209324): 
             print("Your result is insane")
 
 if __name__ == '__main__':
