@@ -25,6 +25,8 @@ def calculate(myarg):
             arg1 = stack.pop()
             result = function(arg1, arg2)
             stack.append(result)
+
+        stack = colored(stack, "red")
         print(stack)
     if len(stack) != 1:
         raise TypeError("Too many parameters")
@@ -35,11 +37,11 @@ def main():
         result = calculate(input("rpn calc> "))
         print("Result: ", result)
         if (result == 0): 
-            print("Hallelujah, it's 0!")
-        if (result == 10000000): 
-            print("You're a billionaire")
-        if (result == 103948209324): 
-            print("Your result is insane")
+            result = colored(result, "yellow")
+            print(result)
+        if (result < 0): 
+            result = colored(result, "green", "on_red")
+            print(result)
         if (result > 0):
             result = colored(result, "red", "on_green")
             print(result)
