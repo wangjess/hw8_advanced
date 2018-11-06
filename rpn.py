@@ -26,7 +26,8 @@ def calculate(myarg):
             result = function(arg1, arg2)
             stack.append(result)
 
-        stack = colored(stack, "red")
+        random = colored(12, "red")
+        print(random)
         print(stack)
     if len(stack) != 1:
         raise TypeError("Too many parameters")
