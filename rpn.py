@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 import operator
-import sys
-from termcolor import colored, cprint
+from termcolor import colored # pip install termcolor
 
 operators = {
     '+': operator.add,
@@ -41,6 +40,9 @@ def main():
             print("You're a billionaire")
         if (result == 103948209324): 
             print("Your result is insane")
+        if (result > 0):
+            result = colored(result, "red", "on_green")
+            print(result)
 
 if __name__ == '__main__':
     main()
